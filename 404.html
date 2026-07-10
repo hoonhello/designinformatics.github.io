@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+
+  <title>Redirecting to Design AI Lab</title>
+
+  <meta
+    name="robots"
+    content="noindex, follow"
+  >
+
+  <meta
+    http-equiv="refresh"
+    content="0; url=https://designai.hanyang.ac.kr/"
+  >
+
+  <script>
+    (function () {
+      const targetOrigin = "https://designai.hanyang.ac.kr";
+
+      const targetUrl =
+        targetOrigin +
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+
+      window.location.replace(targetUrl);
+    })();
+  </script>
+</head>
+
+<body>
+  <p>
+    Redirecting to
+    <a id="redirect-link" href="https://designai.hanyang.ac.kr/">
+      Design AI Lab
+    </a>...
+  </p>
+
+  <script>
+    const link = document.getElementById("redirect-link");
+
+    link.href =
+      "https://designai.hanyang.ac.kr" +
+      window.location.pathname +
+      window.location.search +
+      window.location.hash;
+  </script>
+</body>
+</html>
